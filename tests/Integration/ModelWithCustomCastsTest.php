@@ -41,7 +41,7 @@ class ModelWithCustomCastsTest extends TestCase
 
         // Save field directly without using `Model`
         DB::table('table_a')->insert([
-            'col_1' => $b64String
+            'col_1' => $b64String,
         ]);
 
         $model = ModelWithCustomCasts::first();
@@ -59,7 +59,7 @@ class ModelWithCustomCastsTest extends TestCase
 
         // Write model data via `Model` object
         ModelWithCustomCasts::create([
-            'col_1' => $string
+            'col_1' => $string,
         ]);
 
         // Get raw data (as stdClass) without using `Model`
@@ -75,7 +75,7 @@ class ModelWithCustomCastsTest extends TestCase
     public function can_update_custom_cast_attribute()
     {
         DB::table('table_a')->insert([
-            'col_1' => ''
+            'col_1' => '',
         ]);
 
         $string = Str::random();
@@ -133,6 +133,3 @@ class ModelWithCustomCastsTest extends TestCase
         $this->assertSame($customCasts, $model2->getCustomCasts());
     }
 }
-
-
-

@@ -3,7 +3,7 @@
 namespace Vkovic\LaravelCustomCasts;
 
 /**
- * Get the path to the package folder
+ * Get the path to the package folder.
  *
  * @param string $path
  *
@@ -11,7 +11,7 @@ namespace Vkovic\LaravelCustomCasts;
  */
 function package_path($path = '')
 {
-    $packagePath = rtrim(__DIR__ . '/..', DIRECTORY_SEPARATOR);
+    $packagePath = rtrim(__DIR__.'/..', DIRECTORY_SEPARATOR);
 
-    return $packagePath . ($path ? DIRECTORY_SEPARATOR . $path : $path);
+    return $packagePath.($path ? DIRECTORY_SEPARATOR.$path : $path);
 }

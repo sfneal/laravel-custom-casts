@@ -6,7 +6,7 @@ trait HasCustomCasts
 {
     /**
      * Each field which is going to be custom casted
-     * will have its own custom cast instance in this array
+     * will have its own custom cast instance in this array.
      *
      * @var array
      */
@@ -15,14 +15,14 @@ trait HasCustomCasts
     /**
      * Custom casts array
      * - key: model attribute (field name)
-     * - value: custom cast class name
+     * - value: custom cast class name.
      *
      * @var array
      */
     protected $customCasts;
 
     /**
-     * Boot trait
+     * Boot trait.
      */
     public static function bootHasCustomCasts()
     {
@@ -46,7 +46,7 @@ trait HasCustomCasts
     }
 
     /**
-     * Registers event listener for specific custom cast attribute
+     * Registers event listener for specific custom cast attribute.
      *
      * @param string $event
      * @param string $attribute
@@ -91,7 +91,7 @@ trait HasCustomCasts
     }
 
     /**
-     * Filter valid custom casts out of Model::$casts array
+     * Filter valid custom casts out of Model::$casts array.
      *
      * @return array - key: model attribute (field name)
      *               - value: custom cast class name
@@ -118,7 +118,7 @@ trait HasCustomCasts
     }
 
     /**
-     * Cast attribute (from db value to our custom format)
+     * Cast attribute (from db value to our custom format).
      *
      * @param $attribute
      * @param $value
@@ -138,7 +138,7 @@ trait HasCustomCasts
     }
 
     /**
-     * Cast attribute (from db value to our custom format)
+     * Cast attribute (from db value to our custom format).
      *
      * @param $attribute
      * @param $value
@@ -151,7 +151,7 @@ trait HasCustomCasts
     }
 
     /**
-     * Cast attribute (from db value to our custom format)
+     * Cast attribute (from db value to our custom format).
      *
      * @param $attribute
      * @param $value
@@ -164,7 +164,7 @@ trait HasCustomCasts
     }
 
     /**
-     * Returns true if attribute is custom cast
+     * Returns true if attribute is custom cast.
      *
      * @param $attribute
      * @return bool
@@ -175,7 +175,7 @@ trait HasCustomCasts
     }
 
     /**
-     * Lazy load custom cast object and return it
+     * Lazy load custom cast object and return it.
      *
      * @param $attribute
      *
@@ -183,7 +183,7 @@ trait HasCustomCasts
      */
     protected function getCustomCastObject($attribute)
     {
-        if (!isset($this->customCastObjects[$attribute])) {
+        if (! isset($this->customCastObjects[$attribute])) {
             $customCastClass = $this->getCastClass($this->casts[$attribute]);
             $customCastObject = new $customCastClass($this, $attribute);
 
