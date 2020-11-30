@@ -57,3 +57,7 @@ All notable changes to `laravel-custom-casts` will be documented in this file
 ## 1.4.0 - 2020-11-30
 - added support for php 8
 - reduced strictness of composer package version requirements
+
+
+## 1.4.1 - 2020-11-30
+- fix namespaces
