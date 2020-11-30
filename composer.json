@@ -22,7 +22,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Vkovic\\LaravelCustomCasts\\": "src"
+      "Sfneal\\LaravelCustomCasts\\": "src"
     },
     "files": [
       "src/helpers.php"

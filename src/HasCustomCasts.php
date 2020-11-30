@@ -1,6 +1,6 @@
 <?php
 
-namespace Vkovic\LaravelCustomCasts;
+namespace Sfneal\LaravelCustomCasts;
 
 trait HasCustomCasts
 {
@@ -179,7 +179,7 @@ trait HasCustomCasts
      *
      * @param $attribute
      *
-     * @return \Vkovic\LaravelCustomCasts\CustomCastBase
+     * @return \Sfneal\LaravelCustomCasts\CustomCastBase
      */
     protected function getCustomCastObject($attribute)
     {

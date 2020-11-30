@@ -1,6 +1,6 @@
 <?php
 
-namespace Vkovic\LaravelCustomCasts;
+namespace Sfneal\LaravelCustomCasts;
 
 use Illuminate\Support\ServiceProvider;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Vkovic\LaravelCustomCasts;
+namespace Sfneal\LaravelCustomCasts;
 
 /**
  * Get the path to the package folder.
