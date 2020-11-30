@@ -1,5 +1,5 @@
 # Native image
-FROM php:7.2-cli
+FROM php:7.4-cli
 
 # Enable debugging
 RUN mv /usr/local/etc/php/php.ini-development /usr/local/etc/php/php.ini
