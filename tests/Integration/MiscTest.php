@@ -1,10 +1,10 @@
 <?php
 
-namespace Vkovic\LaravelCustomCasts\Test\Integration;
+namespace Sfneal\LaravelCustomCasts\Tests\Integration;
 
-use Vkovic\LaravelCustomCasts\Test\Support\Models\ModelWithDefaultValue;
-use Vkovic\LaravelCustomCasts\Test\Support\Models\ModelWithDefaultValueForCustomCasts;
-use Vkovic\LaravelCustomCasts\Test\TestCase;
+use Sfneal\LaravelCustomCasts\Tests\Support\Models\ModelWithDefaultValue;
+use Sfneal\LaravelCustomCasts\Tests\Support\Models\ModelWithDefaultValueForCustomCasts;
+use Sfneal\LaravelCustomCasts\Tests\TestCase;
 
 class MiscTest extends TestCase
 {

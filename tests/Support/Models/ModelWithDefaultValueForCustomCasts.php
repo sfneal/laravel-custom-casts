@@ -1,10 +1,10 @@
 <?php
 
-namespace Vkovic\LaravelCustomCasts\Test\Support\Models;
+namespace Sfneal\LaravelCustomCasts\Tests\Support\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Vkovic\LaravelCustomCasts\HasCustomCasts;
-use Vkovic\LaravelCustomCasts\Test\Support\CustomCasts\Base64Cast;
+use Sfneal\LaravelCustomCasts\HasCustomCasts;
+use Sfneal\LaravelCustomCasts\Tests\Support\CustomCasts\Base64Cast;
 
 class ModelWithDefaultValueForCustomCasts extends Model
 {

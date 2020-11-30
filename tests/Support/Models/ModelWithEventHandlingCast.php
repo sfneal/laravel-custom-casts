@@ -1,8 +1,8 @@
 <?php
 
-namespace Vkovic\LaravelCustomCasts\Test\Support\Models;
+namespace Sfneal\LaravelCustomCasts\Tests\Support\Models;
 
-use Vkovic\LaravelCustomCasts\Test\Support\CustomCasts\EventHandlingCast;
+use Sfneal\LaravelCustomCasts\Tests\Support\CustomCasts\EventHandlingCast;
 
 class ModelWithEventHandlingCast extends ModelWithCustomCasts
 {

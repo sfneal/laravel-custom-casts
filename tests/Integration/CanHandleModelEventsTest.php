@@ -1,11 +1,11 @@
 <?php
 
-namespace Vkovic\LaravelCustomCasts\Test\Integration;
+namespace Sfneal\LaravelCustomCasts\Tests\Integration;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
-use Vkovic\LaravelCustomCasts\Test\Support\Models\ModelWithEventHandlingCast;
-use Vkovic\LaravelCustomCasts\Test\TestCase;
+use Sfneal\LaravelCustomCasts\Tests\Support\Models\ModelWithEventHandlingCast;
+use Sfneal\LaravelCustomCasts\Tests\TestCase;
 
 class CanHandleModelEventsTest extends TestCase
 {

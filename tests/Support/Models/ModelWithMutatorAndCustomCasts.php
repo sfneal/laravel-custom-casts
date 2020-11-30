@@ -1,6 +1,6 @@
 <?php
 
-namespace Vkovic\LaravelCustomCasts\Test\Support\Models;
+namespace Sfneal\LaravelCustomCasts\Tests\Support\Models;
 
 class ModelWithMutatorAndCustomCasts extends ModelWithCustomCasts
 {

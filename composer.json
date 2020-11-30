@@ -30,7 +30,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Vkovic\\LaravelCustomCasts\\Test\\": "tests"
+      "Sfneal\\LaravelCustomCasts\\Tests\\": "tests"
     }
   },
   "require": {

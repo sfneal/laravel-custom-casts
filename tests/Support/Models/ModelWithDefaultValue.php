@@ -1,9 +1,9 @@
 <?php
 
-namespace Vkovic\LaravelCustomCasts\Test\Support\Models;
+namespace Sfneal\LaravelCustomCasts\Tests\Support\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Vkovic\LaravelCustomCasts\HasCustomCasts;
+use Sfneal\LaravelCustomCasts\HasCustomCasts;
 
 class ModelWithDefaultValue extends Model
 {

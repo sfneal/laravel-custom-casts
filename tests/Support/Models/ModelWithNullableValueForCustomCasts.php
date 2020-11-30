@@ -1,8 +1,8 @@
 <?php
 
-namespace Vkovic\LaravelCustomCasts\Test\Support\Models;
+namespace Sfneal\LaravelCustomCasts\Tests\Support\Models;
 
-use Vkovic\LaravelCustomCasts\Test\Support\CustomCasts\Base64Cast;
+use Sfneal\LaravelCustomCasts\Tests\Support\CustomCasts\Base64Cast;
 
 class ModelWithNullableValueForCustomCasts extends ModelWithCustomCasts
 {

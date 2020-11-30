@@ -1,10 +1,10 @@
 <?php
 
-namespace Vkovic\LaravelCustomCasts\Test\Integration;
+namespace Sfneal\LaravelCustomCasts\Tests\Integration;
 
 use DB;
-use Vkovic\LaravelCustomCasts\Test\Support\Models\ModelWithDefaultValueForCustomCasts;
-use Vkovic\LaravelCustomCasts\Test\TestCase;
+use Sfneal\LaravelCustomCasts\Tests\Support\Models\ModelWithDefaultValueForCustomCasts;
+use Sfneal\LaravelCustomCasts\Tests\TestCase;
 
 class ModelWithDefaultValueForCustomCastFieldTest extends TestCase
 {

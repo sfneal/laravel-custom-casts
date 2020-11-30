@@ -1,10 +1,10 @@
 <?php
 
-namespace Vkovic\LaravelCustomCasts\Test\Integration;
+namespace Sfneal\LaravelCustomCasts\Tests\Integration;
 
 use DB;
-use Vkovic\LaravelCustomCasts\Test\Support\Models\ModelWithNullableValueForCustomCasts;
-use Vkovic\LaravelCustomCasts\Test\TestCase;
+use Sfneal\LaravelCustomCasts\Tests\Support\Models\ModelWithNullableValueForCustomCasts;
+use Sfneal\LaravelCustomCasts\Tests\TestCase;
 
 class ModelWithNullableCustomCastFieldTest extends TestCase
 {

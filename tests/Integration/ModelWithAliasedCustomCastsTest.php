@@ -1,11 +1,11 @@
 <?php
 
-namespace Vkovic\LaravelCustomCasts\Test\Integration;
+namespace Sfneal\LaravelCustomCasts\Tests\Integration;
 
 use DB;
 use Illuminate\Support\Str;
-use Vkovic\LaravelCustomCasts\Test\Support\Models\ModelWithAliasedCustomCasts;
-use Vkovic\LaravelCustomCasts\Test\TestCase;
+use Sfneal\LaravelCustomCasts\Tests\Support\Models\ModelWithAliasedCustomCasts;
+use Sfneal\LaravelCustomCasts\Tests\TestCase;
 
 class ModelWithAliasedCustomCastsTest extends TestCase
 {

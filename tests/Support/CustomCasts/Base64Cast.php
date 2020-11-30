@@ -1,8 +1,8 @@
 <?php
 
-namespace Vkovic\LaravelCustomCasts\Test\Support\CustomCasts;
+namespace Sfneal\LaravelCustomCasts\Tests\Support\CustomCasts;
 
-use Vkovic\LaravelCustomCasts\CustomCastBase;
+use Sfneal\LaravelCustomCasts\CustomCastBase;
 
 class Base64Cast extends CustomCastBase
 {

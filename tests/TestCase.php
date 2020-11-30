@@ -1,11 +1,11 @@
 <?php
 
-namespace Vkovic\LaravelCustomCasts\Test;
+namespace Sfneal\LaravelCustomCasts\Tests;
 
 use Illuminate\Foundation\Application;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
-use function Vkovic\LaravelCustomCasts\package_path;
-use Vkovic\LaravelCustomCasts\Test\Support\CustomCasts\Base64Cast;
+use function Sfneal\LaravelCustomCasts\package_path;
+use Sfneal\LaravelCustomCasts\Tests\Support\CustomCasts\Base64Cast;
 
 class TestCase extends OrchestraTestCase
 {

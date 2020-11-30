@@ -1,14 +1,14 @@
 <?php
 
-namespace Vkovic\LaravelCustomCasts\Test\Integration;
+namespace Sfneal\LaravelCustomCasts\Tests\Integration;
 
 use DB;
 use Illuminate\Support\Str;
-use Vkovic\LaravelCustomCasts\Test\Support\CustomCasts\Base64Cast;
-use Vkovic\LaravelCustomCasts\Test\Support\Models\ModelWithAliasedCustomCasts;
-use Vkovic\LaravelCustomCasts\Test\Support\Models\ModelWithCustomCasts;
-use Vkovic\LaravelCustomCasts\Test\Support\Models\ModelWithMutatorAndCustomCasts;
-use Vkovic\LaravelCustomCasts\Test\TestCase;
+use Sfneal\LaravelCustomCasts\Tests\Support\CustomCasts\Base64Cast;
+use Sfneal\LaravelCustomCasts\Tests\Support\Models\ModelWithAliasedCustomCasts;
+use Sfneal\LaravelCustomCasts\Tests\Support\Models\ModelWithCustomCasts;
+use Sfneal\LaravelCustomCasts\Tests\Support\Models\ModelWithMutatorAndCustomCasts;
+use Sfneal\LaravelCustomCasts\Tests\TestCase;
 
 class ModelWithCustomCastsTest extends TestCase
 {
