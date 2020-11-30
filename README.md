@@ -1,13 +1,13 @@
 # Laravel Custom Casts
 
-[![Build](https://api.travis-ci.org/vkovic/laravel-custom-casts.svg?branch=master)](https://travis-ci.org/vkovic/laravel-custom-casts)
-[![Downloads](https://poser.pugx.org/vkovic/laravel-custom-casts/downloads)](https://packagist.org/packages/vkovic/laravel-custom-casts)
-[![Stable](https://poser.pugx.org/vkovic/laravel-custom-casts/v/stable)](https://packagist.org/packages/vkovic/laravel-custom-casts)
-[![License](https://poser.pugx.org/vkovic/laravel-custom-casts/license)](https://packagist.org/packages/vkovic/laravel-custom-casts)
+[![Build](https://api.travis-ci.org/sfneal/laravel-custom-casts.svg?branch=master)](https://travis-ci.org/sfneal/laravel-custom-casts)
+[![Downloads](https://poser.pugx.org/sfneal/laravel-custom-casts/downloads)](https://packagist.org/packages/sfneal/laravel-custom-casts)
+[![Stable](https://poser.pugx.org/sfneal/laravel-custom-casts/v/stable)](https://packagist.org/packages/sfneal/laravel-custom-casts)
+[![License](https://poser.pugx.org/sfneal/laravel-custom-casts/license)](https://packagist.org/packages/sfneal/laravel-custom-casts)
 
 ### Make your own cast type for Laravel model attributes
 
-Laravel custom casts works similarly to [Eloquent attribute casting](https://laravel.com/docs/6.x/eloquent-mutators#attribute-casting), but with custom-defined logic (in a separate class). This means we can use the same casting logic across multiple models — we might write [image upload logic](https://github.com/vkovic/laravel-custom-casts/tree/v1.0.2#example-casting-user-image) and use it everywhere. In addition to casting to custom types, this package allows custom casts to listen and react to underlying model events.
+Laravel custom casts works similarly to [Eloquent attribute casting](https://laravel.com/docs/6.x/eloquent-mutators#attribute-casting), but with custom-defined logic (in a separate class). This means we can use the same casting logic across multiple models — we might write [image upload logic](https://github.com/sfneal/laravel-custom-casts/tree/v1.0.2#example-casting-user-image) and use it everywhere. In addition to casting to custom types, this package allows custom casts to listen and react to underlying model events.
 
 Let's review some Laravel common cast types and examples of their usage:
 
@@ -30,7 +30,7 @@ In addition to `boolean`, `integer`, and `decimal`, out of the box Laravel suppo
 
 Sometimes it is convenient to handle more complex types with custom logic, and for casts to be able to listen and react to model events. This is where this package come in handy.
 
->Handling events directly from custom casts can be very useful if, for example, we're storing an image using a custom casts and we need to delete it when the model is deleted. *Check out the [old documentation](https://github.com/vkovic/laravel-custom-casts/tree/v1.0.2#example-casting-user-image) for this example.*
+>Handling events directly from custom casts can be very useful if, for example, we're storing an image using a custom casts and we need to delete it when the model is deleted. *Check out the [old documentation](https://github.com/sfneal/laravel-custom-casts/tree/v1.0.2#example-casting-user-image) for this example.*
 
 
 ### :package: vkovic packages :package:
@@ -51,7 +51,7 @@ and **Lumen** versions `5.5`, `5.6`, `5.7`, `5.8`.
 Install the package via Composer:
 
 ```bash
-composer require vkovic/laravel-custom-casts
+composer require sfneal/laravel-custom-casts
 ```
 
 ## Usage
@@ -215,7 +215,7 @@ php artisan vendor:publish --provider="Vkovic\LaravelCustomCasts\CustomCastsServ
 This command should create a config file located at `config/custom_casts.php`. Open it up and check out the comments for examples of config options.
 
 > #### More examples
-> You can find more examples in the [old documentation](https://github.com/vkovic/laravel-custom-casts/tree/v1.0.2#example-casting-user-image).
+> You can find more examples in the [old documentation](https://github.com/sfneal/laravel-custom-casts/tree/v1.0.2#example-casting-user-image).
 
 ## Contributing
 

@@ -11,7 +11,7 @@ class MiscTest extends TestCase
 {
     /**
      * To be able to understand this test see:
-     * https://github.com/vkovic/laravel-custom-casts/issues/5
+     * https://github.com/sfneal/laravel-custom-casts/issues/5
      *
      * Until better solutions is found, we'll act upon decision from mentioned issue
      *
