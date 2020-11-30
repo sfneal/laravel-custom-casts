@@ -2,8 +2,8 @@
 
 namespace Vkovic\LaravelCustomCasts\Test\Integration;
 
-use DB;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
 use Vkovic\LaravelCustomCasts\Test\Support\Models\ModelWithEventHandlingCast;
 use Vkovic\LaravelCustomCasts\Test\TestCase;
 
