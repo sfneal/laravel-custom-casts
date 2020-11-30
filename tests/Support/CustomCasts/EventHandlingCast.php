@@ -25,7 +25,7 @@ class EventHandlingCast extends CustomCastBase
     {
         $this->eventsReceived[] = 'booted';
     }
-    
+
     public function retrieved()
     {
         $this->eventsReceived[] = 'retrieved';

@@ -66,4 +66,3 @@ class CanHandleModelEventsTest extends TestCase
         return $customCastObject->eventsReceived;
     }
 }
-

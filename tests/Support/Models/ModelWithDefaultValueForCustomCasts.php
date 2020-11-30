@@ -14,6 +14,6 @@ class ModelWithDefaultValueForCustomCasts extends Model
     protected $table = 'table_b';
 
     protected $casts = [
-        'col_1' => Base64Cast::class
+        'col_1' => Base64Cast::class,
     ];
 }

@@ -4,8 +4,8 @@ namespace Vkovic\LaravelCustomCasts\Test;
 
 use Illuminate\Foundation\Application;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
-use Vkovic\LaravelCustomCasts\Test\Support\CustomCasts\Base64Cast;
 use function Vkovic\LaravelCustomCasts\package_path;
+use Vkovic\LaravelCustomCasts\Test\Support\CustomCasts\Base64Cast;
 
 class TestCase extends OrchestraTestCase
 {
@@ -14,7 +14,6 @@ class TestCase extends OrchestraTestCase
      *
      * @return void
      * @throws \Exception
-     *
      */
     public function setUp(): void
     {
@@ -24,7 +23,7 @@ class TestCase extends OrchestraTestCase
     }
 
     /**
-     * Define environment setup
+     * Define environment setup.
      *
      * @param Application $app
      *
@@ -42,7 +41,7 @@ class TestCase extends OrchestraTestCase
     }
 
     /**
-     * Call protected or private method on object
+     * Call protected or private method on object.
      *
      * @param object $object
      * @param string $methodName
@@ -62,7 +61,7 @@ class TestCase extends OrchestraTestCase
     }
 
     /**
-     * Get protected or private property of an object
+     * Get protected or private property of an object.
      *
      * @param object $object
      * @param string $property

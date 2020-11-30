@@ -7,14 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 abstract class CustomCastBase
 {
     /**
-     * Model
+     * Model.
      *
      * @var Model
      */
     protected $model;
 
     /**
-     * Corresponding db field (model attribute name)
+     * Corresponding db field (model attribute name).
      *
      * @var string
      */
@@ -27,7 +27,7 @@ abstract class CustomCastBase
     }
 
     /**
-     * Enforce implementation in child classes
+     * Enforce implementation in child classes.
      *
      * Intercept value passed to model under specified field ($attribute)
      * and change it to our will, and/or add some logic, before it's going
@@ -40,7 +40,7 @@ abstract class CustomCastBase
     abstract public function setAttribute($value);
 
     /**
-     * Cast attribute (from db value to our custom format)
+     * Cast attribute (from db value to our custom format).
      *
      * @param mixed $value Value from database field
      *
