@@ -2,7 +2,7 @@
 
 namespace Sfneal\LaravelCustomCasts\Tests\Integration;
 
-use DB;
+use Illuminate\Support\Facades\DB;
 use Sfneal\LaravelCustomCasts\Tests\Support\Models\ModelWithNullableValueForCustomCasts;
 use Sfneal\LaravelCustomCasts\Tests\TestCase;
 
