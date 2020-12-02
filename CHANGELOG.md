@@ -66,3 +66,7 @@ All notable changes to `laravel-custom-casts` will be documented in this file
 ## 1.4.2 - 2020-12-01
 - fix issues with --prefer-lowest composer installations
 - fix Travis CI config & remove php7.0 testing
+
+
+## 1.4.3 - 2020-12-01
+- fix issues with Travis CI config
