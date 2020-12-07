@@ -70,3 +70,7 @@ All notable changes to `laravel-custom-casts` will be documented in this file
 
 ## 1.4.3 - 2020-12-01
 - fix issues with Travis CI config
+
+
+## 1.4.4 - 2020-12-07
+- fix issues with loading database migrations

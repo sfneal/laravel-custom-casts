@@ -4,7 +4,6 @@ namespace Sfneal\LaravelCustomCasts\Tests;
 
 use Illuminate\Foundation\Application;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
-use function Sfneal\LaravelCustomCasts\package_path;
 use Sfneal\LaravelCustomCasts\Tests\Support\CustomCasts\Base64Cast;
 
 class TestCase extends OrchestraTestCase
@@ -19,7 +18,9 @@ class TestCase extends OrchestraTestCase
     {
         parent::setUp();
 
-        $this->loadMigrationsFrom(package_path('tests/database/migrations'));
+        include_once __DIR__.'/database/migrations/0000_00_00_000000_create_package_test_tables.php';
+
+        (new \CreatePackageTestTables())->up();
     }
 
     /**
