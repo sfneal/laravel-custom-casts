@@ -1,7 +1,8 @@
 # Laravel Custom Casts
 
-[![Build](https://api.travis-ci.org/sfneal/laravel-custom-casts.svg?branch=master)](https://travis-ci.org/sfneal/laravel-custom-casts)
-[![Downloads](https://poser.pugx.org/sfneal/laravel-custom-casts/downloads)](https://packagist.org/packages/sfneal/laravel-custom-casts)
+[![Packagist PHP support](https://img.shields.io/packagist/php-v/sfneal/laravel-custom-casts)](https://packagist.org/packages/sfneal/laravel-custom-casts)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/sfneal/laravel-custom-casts.svg?style=flat-square)](https://packagist.org/packages/sfneal/laravel-custom-casts)
+[![Build Status](https://travis-ci.com/sfneal/laravel-custom-casts.svg?branch=master&style=flat-square)](https://travis-ci.com/sfneal/laravel-custom-casts)
 [![Stable](https://poser.pugx.org/sfneal/laravel-custom-casts/v/stable)](https://packagist.org/packages/sfneal/laravel-custom-casts)
 [![License](https://poser.pugx.org/sfneal/laravel-custom-casts/license)](https://packagist.org/packages/sfneal/laravel-custom-casts)
 
