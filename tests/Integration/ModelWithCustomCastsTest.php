@@ -20,7 +20,7 @@ class ModelWithCustomCastsTest extends TestCase
         $string = Str::random();
 
         // Write model data via `Model` object
-        $model = new ModelWithCustomCasts;
+        $model = new ModelWithCustomCasts();
         $model->col_1 = $string;
         $model->save();
 
@@ -41,7 +41,7 @@ class ModelWithCustomCastsTest extends TestCase
 
         // Save field directly without using `Model`
         DB::table('table_a')->insert([
-            'col_1' => $b64String
+            'col_1' => $b64String,
         ]);
 
         $model = ModelWithCustomCasts::first();
@@ -59,7 +59,7 @@ class ModelWithCustomCastsTest extends TestCase
 
         // Write model data via `Model` object
         ModelWithCustomCasts::create([
-            'col_1' => $string
+            'col_1' => $string,
         ]);
 
         // Get raw data (as stdClass) without using `Model`
@@ -75,7 +75,7 @@ class ModelWithCustomCastsTest extends TestCase
     public function can_update_custom_cast_attribute()
     {
         DB::table('table_a')->insert([
-            'col_1' => ''
+            'col_1' => '',
         ]);
 
         $string = Str::random();
@@ -94,7 +94,7 @@ class ModelWithCustomCastsTest extends TestCase
      */
     public function mutator_has_priority_over_custom_casts()
     {
-        $model = new ModelWithMutatorAndCustomCasts;
+        $model = new ModelWithMutatorAndCustomCasts();
         $model->col_1 = 'mutated_via_custom_casts';
         $model->save();
 
@@ -120,8 +120,8 @@ class ModelWithCustomCastsTest extends TestCase
      */
     public function can_get_list_of_custom_casts()
     {
-        $model1 = new ModelWithCustomCasts;
-        $model2 = new ModelWithAliasedCustomCasts;
+        $model1 = new ModelWithCustomCasts();
+        $model2 = new ModelWithAliasedCustomCasts();
 
         // This is actual custom casts defined in both models (from above)
         // but in second as and alias (which should resolve to a class)
@@ -133,6 +133,3 @@ class ModelWithCustomCastsTest extends TestCase
         $this->assertSame($customCasts, $model2->getCustomCasts());
     }
 }
-
-
-
