@@ -5,6 +5,7 @@ namespace Vkovic\LaravelCustomCasts\Test;
 use Illuminate\Foundation\Application;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 use Vkovic\LaravelCustomCasts\Test\Support\CustomCasts\Base64Cast;
+
 use function Vkovic\LaravelCustomCasts\package_path;
 
 class TestCase extends OrchestraTestCase
@@ -12,9 +13,9 @@ class TestCase extends OrchestraTestCase
     /**
      * Setup the test environment.
      *
-     * @return void
      * @throws \Exception
      *
+     * @return void
      */
     public function setUp(): void
     {
@@ -24,7 +25,7 @@ class TestCase extends OrchestraTestCase
     }
 
     /**
-     * Define environment setup
+     * Define environment setup.
      *
      * @param Application $app
      *
@@ -34,7 +35,7 @@ class TestCase extends OrchestraTestCase
     {
         $app['config']->set('database.default', 'testbench');
         $app['config']->set('database.connections.testbench', [
-            'driver' => 'sqlite',
+            'driver'   => 'sqlite',
             'database' => ':memory:',
         ]);
 
@@ -42,15 +43,15 @@ class TestCase extends OrchestraTestCase
     }
 
     /**
-     * Call protected or private method on object
+     * Call protected or private method on object.
      *
      * @param object $object
      * @param string $methodName
      * @param mixed  $args
      *
-     * @return mixed
-     *
      * @throws \ReflectionException
+     *
+     * @return mixed
      */
     protected static function callProtectedMethod($object, $methodName, $args)
     {
@@ -62,7 +63,7 @@ class TestCase extends OrchestraTestCase
     }
 
     /**
-     * Get protected or private property of an object
+     * Get protected or private property of an object.
      *
      * @param object $object
      * @param string $property

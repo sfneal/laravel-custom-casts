@@ -13,7 +13,7 @@ class ModelWithDefaultValueForCustomCastFieldTest extends TestCase
      */
     public function default_custom_cast_field_will_remain_default_when_field_not_present()
     {
-        $model = new ModelWithDefaultValueForCustomCasts;
+        $model = new ModelWithDefaultValueForCustomCasts();
         $model->save(); // Save with default value (defined in migrations)
 
         $tableRow = DB::table('table_b')->first();

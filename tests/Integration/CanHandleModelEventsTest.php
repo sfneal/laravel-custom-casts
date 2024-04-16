@@ -14,7 +14,7 @@ class CanHandleModelEventsTest extends TestCase
      */
     public function can_handle_creating_events()
     {
-        $model = new ModelWithEventHandlingCast;
+        $model = new ModelWithEventHandlingCast();
         $model->col_1 = '';
         $model->save();
 
@@ -66,4 +66,3 @@ class CanHandleModelEventsTest extends TestCase
         return $customCastObject->eventsReceived;
     }
 }
-

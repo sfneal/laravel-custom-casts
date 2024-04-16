@@ -2,7 +2,6 @@
 
 namespace Vkovic\LaravelCustomCasts\Test\Integration;
 
-use DB;
 use Vkovic\LaravelCustomCasts\Test\Support\Models\ModelWithDefaultValue;
 use Vkovic\LaravelCustomCasts\Test\Support\Models\ModelWithDefaultValueForCustomCasts;
 use Vkovic\LaravelCustomCasts\Test\TestCase;
@@ -38,6 +37,3 @@ class MiscTest extends TestCase
         $this->assertSame('col_1_value', $model->refresh()->col_1);
     }
 }
-
-
-

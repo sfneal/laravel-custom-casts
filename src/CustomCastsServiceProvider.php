@@ -4,8 +4,6 @@ namespace Vkovic\LaravelCustomCasts;
 
 use Illuminate\Support\ServiceProvider;
 
-use function Vkovic\LaravelCustomCasts\package_path;
-
 class CustomCastsServiceProvider extends ServiceProvider
 {
     /**
@@ -16,7 +14,7 @@ class CustomCastsServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            package_path('config') => config_path()
+            package_path('config') => config_path(),
         ]);
     }
 

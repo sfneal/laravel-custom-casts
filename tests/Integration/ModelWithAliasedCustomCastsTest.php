@@ -17,7 +17,7 @@ class ModelWithAliasedCustomCastsTest extends TestCase
         $string = Str::random();
 
         // Write model data via `Model` object with aliased casts
-        $model = new ModelWithAliasedCustomCasts;
+        $model = new ModelWithAliasedCustomCasts();
         $model->col_1 = $string;
         $model->save();
 
@@ -38,7 +38,7 @@ class ModelWithAliasedCustomCastsTest extends TestCase
 
         // Save field directly without using `Model`
         DB::table('table_a')->insert([
-            'col_1' => $b64String
+            'col_1' => $b64String,
         ]);
 
         $model = ModelWithAliasedCustomCasts::first();
@@ -47,6 +47,3 @@ class ModelWithAliasedCustomCastsTest extends TestCase
         $this->assertSame($string, $model->col_1);
     }
 }
-
-
-
